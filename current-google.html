@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="shortcut icon" href="media/favicon.svg" type="image/x-icon">
+    <style>
+
+         .body{
+            background: rgb(255,255,255);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            height: 100vh; /*tüm ekran yüksekliği kadar yer kaplasın*/
+            display:flex;
+            flex-direction: column;
+        }
+
+        nav{
+            padding: 5px 10px;
+        }
+
+        .ul {
+            display:flex;
+            justify-content: flex-end;
+            gap: 15px;
+            list-style:none;
+            font-size: 14px; 
+        }
+
+        .ul img {
+            width:24px;
+        }
+
+        .ul li:last-child img{
+            border: 2px solid #3f3f3f;
+            border-radius: 50%;
+        }
+
+        .flex-container{
+            flex:1;
+            display:flex;  
+            place-items:center; /*hem dikeyde hem yatayda hizzalama*/
+            flex-direction: column;
+        }
+
+        .img{
+            display: block;
+            width:  292px;
+            margin-bottom:40px;
+        }
+
+        .input-wrapper{
+            position: relative;
+            width: 73%;
+            max-width: 740px;
+        }
+
+       
+        .input {
+            width:100%;
+            height:50px ;
+            border:none;
+            outline: none;
+            border-radius: 24px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) ;
+            font-size: 16px;
+            padding-left: 48px;
+            padding-right: 90px; /*sağda iki ikon var çünkü daha fazla boşluk olmalı*/
+        }
+
+        .icon{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* tıklamayı engeller. şuan işlevi olmadığı için koydum */
+        }
+
+        .search-icon{
+            left:16px;
+            height: 28px;
+        }
+
+        .mic-icon{
+            right:50px;
+            height: 29px;
+        }
+
+        .lens-icon{
+            right:16px;
+            height: 22px;
+        }
+
+        .fixed{
+            position: fixed;
+            bottom: 15px;
+            right: 16px;
+            background:#d4e4ff;
+            color: black;
+            padding: 2px 13px;
+            font-size: 14px;
+            border-radius: 25px;
+            box-shadow:  0 2px 3px 0.5px rgba(0, 0, 0, 0.2) ; /*x,y,blur,sperad*/
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px; /* ikon ile yazı arasına boşluk */
+        }
+
+        .fixed img{
+            width: 16px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <!--navbar-->
+    <nav>
+        <ul class="ul">
+            <li>Gmail</li>
+            <li>Görseller</li>
+            <li><img src="media/menu.icon.png" title="Google Uygulamalar"></li>
+            <li><img src="media/account.png" title="Google Hesaplar"></li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <div class="flex-container">
+        <!-- google logosu -->
+        <img class="img" src="media/google2025.png" alt="Google" title="Google" >
+
+
+        <!-- searchbar -->
+        <div class="input-wrapper">
+            <input class="input" type="search" placeholder="Google'da arayın veya URL'yi yazın" >
+            <!-- Soldaki büyüteç -->
+            <img class="icon search-icon"  src="media/search.icon.png" alt="search">
+            <!-- Sağdaki mikrofon -->
+            <img class="icon mic-icon"  src="media/mic.icon.png" alt="microphone">
+            <!-- Sağdaki kamera -->
+            <img class="icon lens-icon" src="media/lens.icon.png" alt="camera">
+         </div>
+    </div>     
+
+    <div class="fixed">
+        <img src="media/edit-pen.png"> Chrome'u özelleştir
+    </div>
+
+</body>
+</html>
