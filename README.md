@@ -1,7 +1,7 @@
 # 🔍 Google Clone (1998 & 2025)
 
-Bu projede, Google'ın geçmişteki (1998) ve geleceğe yönelik (2025) iki farklı ana sayfa tasarımı klonlanmıştır.  
-Hem nostaljik hem de modern arayüzleri temsil eden bu çalışma, HTML ve CSS ile hazırlanmıştır.
+Bu projede, Google'ın geçmişteki (1998) ve güncel (2025) iki farklı ana sayfa tasarımı klonlanmıştır.  
+Hem nostaljik hem de modern arayüzleri temsil eden bu çalışma, HTML ve (internal)CSS ile hazırlanmıştır.
 
 ## 📄 Dosyalar
 
