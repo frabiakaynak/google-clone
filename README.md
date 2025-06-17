@@ -10,7 +10,7 @@ Hem nostaljik hem de modern arayüzleri temsil eden bu çalışma, HTML ve (inte
 
 ## 🌐 Canlı Demolar
 
-- 🔙 1998 Versiyonu: [https://frabiakaynak.github.io/google-clone/vintage-google.html](https://frabiakaynak.github.io/google-clone/vintage-google.html)
+- 🔙 1998 Versiyonu: [https://frabiakaynak.github.io/google-clone/vintage-google.html](https://frabiakaynak.github.io/google-clone/vintega-google.html)
 - 🔮 2025 Versiyonu: [https://frabiakaynak.github.io/google-clone/current-google.html](https://frabiakaynak.github.io/google-clone/current-google.html)
 
 ## 🛠️ Kullanılan Teknolojiler
