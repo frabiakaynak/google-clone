@@ -36,6 +36,22 @@
             border-radius: 50%;
         }
 
+        .link{
+            text-decoration: none;
+            color:black
+        }
+
+        .link:hover{
+            text-decoration: underline;
+        }
+
+        .ul li img:hover{
+            background-color: #f3f0f0;
+            border-radius:50%;
+            box-shadow:0 0 0 7px #f3f0f0 ;
+            
+        }
+
         .flex-container{
             flex:1;
             display:flex;  
@@ -72,7 +88,14 @@
             position: absolute;
             top:50%;
             transform: translateY(-50%);
-            pointer-events: none; /* tıklamayı engeller. şuan işlevi olmadığı için koydum */
+        }
+
+        .icon:hover{
+            cursor: pointer;
+        }
+
+        .search-icon:hover{
+            cursor:text;
         }
 
         .search-icon{
@@ -97,7 +120,7 @@
             background:#d4e4ff;
             color: black;
             padding: 2px 13px;
-            font-size: 14px;
+            font-size: 13px;
             border-radius: 25px;
             box-shadow:  0 2px 3px 0.5px rgba(0, 0, 0, 0.2) ; /*x,y,blur,sperad*/
             height: 28px;
@@ -105,6 +128,11 @@
             align-items: center;
             justify-content: center;
             gap: 6px; /* ikon ile yazı arasına boşluk */
+        }
+
+        .fixed:hover{
+          background:#cbdaf4;
+          cursor: pointer;
         }
 
         .fixed img{
@@ -117,10 +145,10 @@
     <!--navbar-->
     <nav>
         <ul class="ul">
-            <li>Gmail</li>
-            <li>Görseller</li>
-            <li><img src="media/menu.icon.png" title="Google Uygulamalar"></li>
-            <li><img src="media/account.png" title="Google Hesaplar"></li>
+            <li ><a class="link" href="https://mail.google.com/mail">Gmail</a></li>
+            <li><a class="link" href="https://www.google.com/imghp?hl=tr&tab=ri&authuser=0&ogbl">Görseller</a></li>
+            <li><a href="https://about.google/products/"><img src="media/menu.icon.png" title="Google Uygulamalar"></li></a>
+            <li><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dtr&ec=GAlA8wE&hl=tr&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1526555387%3A1749802736742485"><img src="media/account.png" title="Google Hesaplar"></a></li>
         </ul>
     </nav>
 
